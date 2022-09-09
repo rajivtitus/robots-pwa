@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunkMiddleware from "redux-thunk";
-import registerServiceWorker from "./registerServiceWorker";
+import { register } from "./serviceWorker";
 import "tachyons";
 
 import App from "./containers/App";
@@ -21,4 +21,4 @@ ReactDOM.render(
 	</Provider>,
 	document.getElementById("root")
 );
-registerServiceWorker();
+register();
