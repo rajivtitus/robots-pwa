@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/robots-pwa/static/css/main.b3a45a6d.chunk.css",
+    "main.css": "/robots-pwa/static/css/main.6308f8bb.chunk.css",
     "main.js": "/robots-pwa/static/js/main.b40152df.chunk.js",
     "main.js.map": "/robots-pwa/static/js/main.b40152df.chunk.js.map",
     "runtime-main.js": "/robots-pwa/static/js/runtime-main.52abfff2.js",
@@ -12,7 +12,7 @@
     "service-worker.js": "/robots-pwa/service-worker.js",
     "service-worker.js.map": "/robots-pwa/service-worker.js.map",
     "static/css/2.75261d94.chunk.css.map": "/robots-pwa/static/css/2.75261d94.chunk.css.map",
-    "static/css/main.b3a45a6d.chunk.css.map": "/robots-pwa/static/css/main.b3a45a6d.chunk.css.map",
+    "static/css/main.6308f8bb.chunk.css.map": "/robots-pwa/static/css/main.6308f8bb.chunk.css.map",
     "static/js/2.4f882a65.chunk.js.LICENSE.txt": "/robots-pwa/static/js/2.4f882a65.chunk.js.LICENSE.txt",
     "static/media/App.css": "/robots-pwa/static/media/SEGA.47b4bfa9.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.52abfff2.js",
     "static/css/2.75261d94.chunk.css",
     "static/js/2.4f882a65.chunk.js",
-    "static/css/main.b3a45a6d.chunk.css",
+    "static/css/main.6308f8bb.chunk.css",
     "static/js/main.b40152df.chunk.js"
   ]
 }
