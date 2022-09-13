@@ -47,9 +47,15 @@
 		]
 	},
 	"devDependencies": {
+		"@types/jest": "^29.0.2",
+		"@types/node": "^18.7.17",
+		"@types/react": "^18.0.19",
+		"@types/react-dom": "^18.0.6",
 		"@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
 		"enzyme": "^3.11.0",
-		"enzyme-to-json": "^3.6.2"
+		"enzyme-to-json": "^3.6.2",
+		"nock": "^13.2.9",
+		"redux-mock-store": "^1.5.4"
 	},
 	"jest": {
 		"snapshotSerializers": [
