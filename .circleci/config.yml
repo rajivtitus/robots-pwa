@@ -1,28 +1,30 @@
 version: 2.1
 jobs:
-  first:
+  build:
     docker:
-      - image: alpine:3.15 # context / project UI env-var reference
+      - image: circleci/node:16.17
     steps:
+      - checkout
       - run:
-          name: The First Step
-          command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+          name: Insatlling Deps
+          command: npm install
+      - run: CI=true npm run build
 
-  second:
+  test:
     docker:
-      - image: alpine:3.15 # context / project UI env-var reference
+      - image: circleci/node:16.17
     steps:
+      - checkout
       - run:
-          name: The First Step
-          command: |
-            echo 'Double trouble!'
-            echo 'This is the delivery pipeline'
+          name: Insatlling Deps
+          command: npm install
+      - run:
+          name: Running Tests
+          command: npm test
 
 workflows:
   version: 2.1
-  my_workflow:
+  build_and_test:
     jobs:
-      - first
-      - second
+      - build
+      - test
