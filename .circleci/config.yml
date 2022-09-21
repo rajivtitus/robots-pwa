@@ -1,0 +1,28 @@
+version: 2.1
+jobs:
+  first:
+    docker:
+      - image: alpine:3.15 # context / project UI env-var reference
+    steps:
+      - run:
+          name: The First Step
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
+
+  second:
+    docker:
+      - image: alpine:3.15 # context / project UI env-var reference
+    steps:
+      - run:
+          name: The First Step
+          command: |
+            echo 'Double trouble!'
+            echo 'This is the delivery pipeline'
+
+  workflows:
+    version: 2.1
+    my_workflow:
+      jobs:
+        - first
+        - second
