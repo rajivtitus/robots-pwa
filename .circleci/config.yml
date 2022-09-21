@@ -20,9 +20,9 @@ jobs:
             echo 'Double trouble!'
             echo 'This is the delivery pipeline'
 
-  workflows:
-    version: 2.1
-    my_workflow:
-      jobs:
-        - first
-        - second
+workflows:
+  version: 2.1
+  my_workflow:
+    jobs:
+      - first
+      - second
